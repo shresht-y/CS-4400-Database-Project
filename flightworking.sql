@@ -57,7 +57,7 @@ CREATE TABLE PERSON (
     personID varchar(50) not null,
     fname varchar(100),
     lname varchar(100),
-    locID varchar(50) not null,
+    locID varchar(50),
     pilotFlag boolean,
     taxID varchar(50),
     experience integer,
@@ -100,7 +100,7 @@ CREATE TABLE SEATS (
     primary key(ticketID, seat)
 ) engine = innodb;
 
-CREATE TABLE LEG (
+CREATE TABLE LEG (	
     legID varchar(8) not null,
     distance integer,
     arrive_airport_ID char(3) not null,
